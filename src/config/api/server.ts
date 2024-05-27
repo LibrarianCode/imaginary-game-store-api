@@ -6,6 +6,7 @@ import connectionDB from "../connection/connectionDB";
 
 /* Routes Location */
 import apiRoutesGame from '../../app/game/route/gameRoute';
+import apiRoutesAnime from '../../app/anime/route/animeRoute';
 
 class Server {
 
@@ -34,6 +35,7 @@ class Server {
 
     private initializeRoutes(): void {
         this.app.use("/api/public/game", apiRoutesGame);
+        this.app.use("/api/public/anime", apiRoutesAnime);
     }
 
     public loadServer(): void {

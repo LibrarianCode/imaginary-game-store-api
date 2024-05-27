@@ -10,6 +10,7 @@ const dotenv_1 = __importDefault(require("dotenv"));
 const connectionDB_1 = __importDefault(require("../connection/connectionDB"));
 /* Routes Location */
 const gameRoute_1 = __importDefault(require("../../app/game/route/gameRoute"));
+const animeRoute_1 = __importDefault(require("../../app/anime/route/animeRoute"));
 class Server {
     // Constructor
     constructor() {
@@ -31,6 +32,7 @@ class Server {
     }
     initializeRoutes() {
         this.app.use("/api/public/game", gameRoute_1.default);
+        this.app.use("/api/public/anime", animeRoute_1.default);
     }
     loadServer() {
         this.app.listen(this.app.get("PORT"), () => {
