@@ -16,15 +16,15 @@ This is a basic API project that uses TypeScript, Express & MongoDB to handle re
 9. [Software Enviroment Variables](#9-software-enviroment-variables)
 10. [Console commands](#10-console-commands)
 
-## 3. Project Creation
+# 3. Project Creation
 Starting off by using the terminal and creating a parent directory for the project.\
 Then inside of said directory, run the command `npm init` to initialize the project's creation.
 
-## 4. Packages Required
+# 4. Packages Required
 
 Inside your IDE of choice, in order to install the required packages the following commands must be executed:
 
-### Production Packages
+## Production Packages
 
 ```
 npm i cors
@@ -33,7 +33,7 @@ npm i express
 npm i mongoose
 ```
 
-### Development Packages
+## Development Packages
 
 ```
 npm i dotenv --save-dev
@@ -43,11 +43,11 @@ npm i @types/morgan --save-dev
 npm i @types/express --save-dev
 ```
 
-## 5. Creation of tsconfig.json File
+# 5. Creation of tsconfig.json File
 
 In your IDE, run the following command `tsc --init` to initialize the _**tsconfig.json**_ file 
 
-## 6. Configure tsconfig.json
+# 6. Configure tsconfig.json
 
 Code to modify in the _**tsconfig.json**_ file
 ```
@@ -56,7 +56,7 @@ Code to modify in the _**tsconfig.json**_ file
 "outDir": "./build",
 ```
 
-## 7. Defining the package.json scripts
+# 7. Defining the package.json scripts
 
 Code to be added in the _**package.json**_ file
 ```
@@ -67,7 +67,7 @@ Code to be added in the _**package.json**_ file
   },
 ```
 
-## 8. Folder Structure
+# 8. Folder Structure
 
 In your project, create the following folder structure:
 - Source Folder: ``md src``
@@ -100,7 +100,7 @@ md src/config/utilities
 md src/config/connection
 ```
 
-## 9. Software Enviroment Variables
+# 9. Software Enviroment Variables
 
 Code to save in a .env file:
 ```
@@ -108,7 +108,7 @@ PORT=3500
 URL_MONGO="mongodb://localhost:27017/imaginary-game-store-db"
 ```
 
-## 10. Console Commands
+# 10. Console Commands
 
 In separate terminals you should run the following commands:\
 - Start Build: ``npm run build``
