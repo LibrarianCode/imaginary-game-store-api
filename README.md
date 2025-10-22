@@ -111,5 +111,5 @@ URL_MONGO="mongodb://localhost:27017/imaginary-game-store-db"
 ## 10. Console Commands
 
 In separate terminals you should run the following commands:\
-> Start Build: ``npm run build``\
-> Start Development: ``npm run dev``
+- Start Build: ``npm run build``
+- Start Development: ``npm run dev``
